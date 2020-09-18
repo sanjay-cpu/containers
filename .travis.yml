@@ -1,6 +1,9 @@
 language: d
 sudo: false
 dist: bionic
+arch:
+  - amd64
+  - ppc64le
 
 addons:
   apt:
@@ -14,6 +17,7 @@ addons:
 branches:
   only:
     - master
+    - ppc64le
 
 install:
   - pip3 install 'meson==0.53.1'
